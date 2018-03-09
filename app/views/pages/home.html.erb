@@ -1,0 +1,23 @@
+<h1>My Home Page</h1>
+
+<h2>Users</h2>
+<% @users.each do |u| %>
+		<b>Name: </b><%= u.username %>
+		<b>Email: </b><%= u.email %>
+		<b>Age: </b><%= u.age %>
+		<br />
+<% end %>
+
+<h2>Cats</h2>
+<% @cats.each do |c| %>
+		<b>Name: </b><%= c.name %>
+		<br />
+<% end %>
+
+<h2>Todos</h2>
+<% @todos.each do |t| %>
+		<b>Task: </b><%= t.tasks %>
+		<b>Finished: </b><%= t.finished %>
+		<br />
+<% end %>
+

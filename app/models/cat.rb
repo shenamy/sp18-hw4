@@ -1,5 +1,7 @@
-class Cat < ActiveRecord::Base
+class Cat < ApplicationRecord
+
 	def meow
-		puts "meow"
+		puts 'meow'
 	end
+
 end
